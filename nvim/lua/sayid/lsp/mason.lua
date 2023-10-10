@@ -3,6 +3,7 @@ local servers = {
 	"pyright",
 	"jsonls",
 	"intelephense",
+	"html",
 }
 
 local settings = {

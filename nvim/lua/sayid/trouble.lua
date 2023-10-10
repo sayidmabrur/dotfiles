@@ -75,5 +75,6 @@ vim.api.nvim_set_keymap(
 	{ silent = true, noremap = true }
 )
 
-opts = { silent = true, noremap = true }
-vim.api.nvim_set_keymap("n", "<leader>t", "<cmd>TroubleToggle document_diagnostics<cr>", opts)
+local opts = { silent = true, noremap = true }
+vim.api.nvim_set_keymap("n", "<leader>td", "<cmd>TroubleToggle document_diagnostics<cr>", opts)
+vim.api.nvim_set_keymap("n", "<leader>tw", "<cmd>TroubleToggle workspace_diagnostics<cr>", opts)

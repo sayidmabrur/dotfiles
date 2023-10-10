@@ -19,3 +19,4 @@ pulse/
 user-dirs.dirs
 user-dirs.locale
 xdg-terminals.list
+.php-cs-fixer.cache
