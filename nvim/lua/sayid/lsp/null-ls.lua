@@ -21,6 +21,10 @@ null_ls.setup({
 		-- python
 		diagnostics.flake8,
 		formatting.black.with({ extra_args = { "--fast" } }),
+
+		--php
+		-- diagnostics.phpmd,
+		-- formatting.phpcsfixer,
 	},
 
 	-- Format file on save

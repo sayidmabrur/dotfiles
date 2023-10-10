@@ -36,7 +36,7 @@ local conditions = {
 -- Config
 local config = {
 	options = {
-		disabled_filetypes = { "alpha" },
+		disabled_filetypes = { "alpha", "Trouble" },
 		-- Disable sections and component separators
 		component_separators = "",
 		section_separators = "",

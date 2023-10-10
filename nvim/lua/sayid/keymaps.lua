@@ -70,3 +70,6 @@ keymap(
 
 -- Nvim Tree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+
+-- show diagnostics message
+keymap("n", "<leader>d", '<cmd>lua vim.diagnostic.open_float({scope="line"})<CR>', opts)
