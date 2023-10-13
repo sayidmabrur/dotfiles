@@ -38,6 +38,10 @@ return packer.startup(function(use)
 		"ViViDboarder/wombat.nvim",
 		requires = "rktjmp/lush.nvim",
 	})
+	use("NLKNguyen/papercolor-theme")
+	use("junegunn/seoul256.vim")
+	use("shaunsingh/solarized.nvim")
+
 	use("lunarvim/colorschemes") -- A bunch of colorschemes you can try out
 	use({
 		"folke/tokyonight.nvim",
@@ -67,7 +71,16 @@ return packer.startup(function(use)
 
 	-- Nvim windows
 	use("kyazdani42/nvim-web-devicons")
-	use("kyazdani42/nvim-tree.lua")
+	use({
+		"nvim-neo-tree/neo-tree.nvim",
+		branch = "v3.x",
+		requires = {
+			"nvim-lua/plenary.nvim",
+			"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+			"MunifTanjim/nui.nvim",
+		},
+	})
+	use({ "akinsho/toggleterm.nvim", tag = "*" })
 	use({
 		"nvim-lualine/lualine.nvim",
 		requires = { "nvim-tree/nvim-web-devicons", opt = true },
