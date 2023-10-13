@@ -87,6 +87,13 @@ return packer.startup(function(use)
 	})
 	use("akinsho/bufferline.nvim")
 	use("goolord/alpha-nvim")
+	use({
+		"kdheepak/tabline.nvim",
+		config = function()
+			require("tabline").setup({ enable = false })
+		end,
+		requires = { "hoob3rt/lualine.nvim", "kyazdani42/nvim-web-devicons" },
+	})
 
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")
