@@ -30,8 +30,10 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
 	use("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
 	use("numToStr/Comment.nvim") -- Easily comment stuff
+	use("lewis6991/gitsigns.nvim")
 
 	-- My Favourite ColorScheme
+	use("rebelot/kanagawa.nvim")
 	use("Mofiqul/dracula.nvim")
 	use({ "ellisonleao/gruvbox.nvim" })
 	use({
@@ -68,6 +70,7 @@ return packer.startup(function(use)
 	use("williamboman/mason.nvim") -- simple to use language server installer
 	use("williamboman/mason-lspconfig.nvim") -- simple to use language server installer
 	use("jose-elias-alvarez/null-ls.nvim") -- LSP diagnostics and code actions
+	use("nvim-lua/lsp-status.nvim")
 
 	-- Nvim windows
 	use("kyazdani42/nvim-web-devicons")
@@ -85,15 +88,23 @@ return packer.startup(function(use)
 		"nvim-lualine/lualine.nvim",
 		requires = { "nvim-tree/nvim-web-devicons", opt = true },
 	})
-	use("akinsho/bufferline.nvim")
-	use("goolord/alpha-nvim")
 	use({
-		"kdheepak/tabline.nvim",
-		config = function()
-			require("tabline").setup({ enable = false })
-		end,
-		requires = { "hoob3rt/lualine.nvim", "kyazdani42/nvim-web-devicons" },
+		"rebelot/heirline.nvim",
+		-- You can optionally lazy-load heirline on UiEnter
+		-- to make sure all required plugins and colorschemes are loaded before setup
+		-- event = "UiEnter",
 	})
+
+	use({
+		"j-hui/fidget.nvim",
+		tag = "legacy",
+		config = function()
+			require("fidget").setup({
+				-- options
+			})
+		end,
+	})
+	use("goolord/alpha-nvim")
 
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")
@@ -109,7 +120,6 @@ return packer.startup(function(use)
 
 	-- Buffer Management
 	-- use({ "ojroques/nvim-bufdel" })
-	use("lewis6991/gitsigns.nvim") -- OPTIONAL: for git status
 	use("romgrk/barbar.nvim")
 	use("folke/trouble.nvim")
 

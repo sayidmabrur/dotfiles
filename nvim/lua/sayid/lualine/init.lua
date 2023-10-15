@@ -1,4 +1,4 @@
-local variant = "classic"
+local variant = "evil"
 
 local status_ok, lua_line = pcall(require, "sayid.lualine.variants." .. variant)
 if not status_ok then
