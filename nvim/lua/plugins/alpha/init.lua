@@ -7,7 +7,7 @@ local dashboard = require("alpha.themes.dashboard")
 -- pick art at arts directory
 
 local art_name = "bear_nvim"
-local status_ok, art = pcall(require, "plugins.alpha.arts." .. art_name)
+local _, art = pcall(require, "plugins.alpha.arts." .. art_name)
 dashboard.section.header.val = art
 
 dashboard.section.buttons.val = {

@@ -8,6 +8,7 @@ local plugins = {
 	"comment",
 	"heirline",
 	"gitsigns",
+	"indent_blankline",
 }
 
 for _, j in pairs(plugins) do

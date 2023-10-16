@@ -4,6 +4,7 @@ require("core")
 
 -- list all plugins here
 local plugins = {
+	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 	{
 		"windwp/nvim-autopairs",
 		event = "InsertEnter",

@@ -3,13 +3,11 @@ local conditions = require("heirline.conditions")
 local statusline = require("plugins.heirline.components.statusline")
 local winbar = require("plugins.heirline.components.winbar")
 local tabline = require("plugins.heirline.components.tabline")
-local statuscolumn = {}
 
 require("heirline").setup({
 	statusline = statusline,
 	winbar = winbar,
 	tabline = tabline,
-	statuscolumn = statuscolumn,
 	opts = {
 		-- if the callback returns true, the winbar will be disabled for that window
 		-- the args parameter corresponds to the table argument passed to autocommand callbacks. :h nvim_lua_create_autocmd()

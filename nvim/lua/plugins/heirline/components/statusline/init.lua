@@ -104,6 +104,7 @@ local ViMode = {
 		end),
 	},
 }
+
 local Align = { provider = "%=" }
 local Space = { provider = " " }
 local block = { provider = "█" }
