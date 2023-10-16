@@ -111,8 +111,8 @@ local CloseButton = {
 	update = { "WinNew", "WinClosed", "BufEnter" },
 	{ provider = " " },
 	{
-		provider = "",
-		hl = { fg = "gray" },
+		provider = "󰅙",
+		hl = { fg = "lotusWhite4" },
 		on_click = {
 			minwid = function()
 				return vim.api.nvim_get_current_win()
@@ -126,7 +126,7 @@ local CloseButton = {
 }
 
 -- Use it anywhere!
-local WinBarFileName = utils.surround({ "", "" }, "bright_bg", {
+local WinBarFileName = utils.surround({ "", "" }, "lotusAqua", {
 	hl = function()
 		if not conditions.is_active() then
 			return { fg = "gray", force = true }
@@ -138,6 +138,7 @@ local WinBarFileName = utils.surround({ "", "" }, "bright_bg", {
 })
 
 local WinBars = {
+	WinBarFileName,
 	fallthrough = false,
 	{ -- A special winbar for terminals
 		condition = function()

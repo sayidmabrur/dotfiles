@@ -106,8 +106,8 @@ local TablineCloseButton = {
 	end,
 	{ provider = " " },
 	{
-		provider = "",
-		hl = { fg = "gray" },
+		provider = "󰅙",
+		hl = { fg = "lotusWhite4" },
 		on_click = {
 			callback = function(_, minwid)
 				vim.schedule(function()
@@ -153,7 +153,7 @@ local Tabpage = {
 }
 
 local TabpageClose = {
-	provider = "%999X  %X",
+	provider = "%999X 󰓩 %X",
 	hl = "TabLine",
 }
 
