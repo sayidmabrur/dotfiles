@@ -6,7 +6,8 @@ local plugins = {
 	"autopairs",
 	"telescope",
 	"comment",
-	"lualine",
+	"heirline",
+	"gitsigns",
 }
 
 for _, j in pairs(plugins) do

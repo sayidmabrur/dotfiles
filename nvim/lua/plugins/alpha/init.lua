@@ -18,11 +18,7 @@ dashboard.section.buttons.val = {
 }
 
 local function footer()
-	local status_ok, alpha = pcall(require, "alpha")
-	if not status_ok then
-		return { [[Menuju tak terbatas dan melampauinya]], [[-- Buzz Lightyear --]] }
-	end
-	fortune = require("alpha.fortune")
+	local fortune = require("alpha.fortune")
 	return fortune
 end
 dashboard.section.footer.val = footer()

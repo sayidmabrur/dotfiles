@@ -34,6 +34,7 @@ local plugins = {
 		"williamboman/mason-lspconfig.nvim",
 		"neovim/nvim-lspconfig",
 		"jose-elias-alvarez/null-ls.nvim",
+		"nvim-lua/lsp-status.nvim",
 	},
 	-- snippets
 	{
@@ -71,10 +72,17 @@ local plugins = {
 
 	-- StatusLine
 	{
-		"nvim-lualine/lualine.nvim",
+		"rebelot/heirline.nvim",
+		-- You can optionally lazy-load heirline on UiEnter
+		-- to make sure all required plugins and colorschemes are loaded before setup
+		-- event = "UiEnter",
 	},
 
-	"anuvyklack/hydra.nvim",
+	-- Git manager
+	"lewis6991/gitsigns.nvim",
+
+	-- pwd
+	"SmiteshP/nvim-navic",
 }
 
 -- add options for lazy.nvim here
@@ -86,7 +94,7 @@ local opts = {
 		title = "Made 󰄛 With 󱚦 Love 󰞇 ", ---@type string only works when border is not "none"
 	},
 	install = {
-		colorscheme = { vim.g.colors_name },
+		colorscheme = { "gruvbox-material" },
 	},
 }
 
