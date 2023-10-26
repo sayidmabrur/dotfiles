@@ -1,12 +1,12 @@
 local files = {
-	"config",
-	"cmp",
-	"lsp_keymaps",
-	"lsp_config",
-	"mason",
-	"null_ls",
+  "config",
+  "cmp",
+  "lsp_config",
+  "null_ls",
+  "lsp_keymaps",
+  "mason",
 }
 
 for _, val in pairs(files) do
-	require("plugins.lsp." .. val)
+  require("plugins.lsp." .. val)
 end

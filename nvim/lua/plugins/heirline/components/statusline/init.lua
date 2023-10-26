@@ -52,7 +52,7 @@ local ViMode = {
 			t = "T",
 		},
 		mode_colors = {
-			n = "waveAqua2",
+			n = "white",
 			i = "winterRed",
 			v = "winterGreen",
 			V = "winterGreen",
@@ -76,7 +76,7 @@ local ViMode = {
 	-- characters long. Plus a nice Icon.
 	{
 		provider = "",
-		hl = { fg = "lotusYellow4" },
+		hl = { fg = "white" },
 	},
 	-- {
 	-- 	provider = function(self)
@@ -91,7 +91,7 @@ local ViMode = {
 		provider = function(self)
 			return " %2(" .. self.mode_names[self.mode] .. "%)"
 		end,
-		hl = { fg = "lotusYellow4" },
+		hl = { fg = "white" },
 	},
 	-- Same goes for the highlight. Now the foreground will change according to the current mode.
 	-- Re-evaluate the component only on ModeChanged event!
@@ -109,7 +109,7 @@ local Align = { provider = "%=" }
 local Space = { provider = " " }
 local block = { provider = "█" }
 -- local divider = { provider = "" }
-ViMode = utils.surround({ "", "" }, "lotusAqua", { ViMode })
+ViMode = utils.surround({ "", "" }, "sakuraPink", { ViMode })
 
 local Diagnostics = {
 
@@ -280,7 +280,7 @@ local FileFlags = {
 			return vim.bo.modified
 		end,
 		provider = "[+]",
-		hl = { fg = "green" },
+		hl = { fg = "winterGreen" },
 	},
 	{
 		condition = function()
@@ -300,7 +300,7 @@ local FileNameModifer = {
 	hl = function()
 		if vim.bo.modified then
 			-- use `force` because we need to override the child's hl foreground
-			return { fg = "cyan", bold = true, force = true }
+			return { fg = "fujiGray", bold = true, force = true }
 		end
 	end,
 }
@@ -334,6 +334,7 @@ local LSPActive = {
 	hl = { bold = true },
 }
 local Divider = { provider = "" }
+
 return {
 	block,
 	Space,

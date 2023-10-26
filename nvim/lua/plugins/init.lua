@@ -9,6 +9,9 @@ local plugins = {
 	"heirline",
 	"gitsigns",
 	"indent_blankline",
+	"toggleterm",
+	"fidget",
+	"live_server",
 }
 
 for _, j in pairs(plugins) do

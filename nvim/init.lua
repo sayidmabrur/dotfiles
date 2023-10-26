@@ -4,13 +4,33 @@ require("core")
 
 -- list all plugins here
 local plugins = {
+
+	{
+		"j-hui/fidget.nvim",
+		tag = "legacy",
+		event = "LspAttach",
+		opts = {
+			-- options
+		},
+	},
+	{
+		"aurum77/live-server.nvim",
+		cmd = { "LiveServer", "LiveServerStart", "LiveServerStop" },
+	},
+	"nvim-lua/plenary.nvim",
+	-- Terminal Toggle
+	{ "akinsho/toggleterm.nvim", version = "*", config = true },
+
+	-- Line Indentation
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+
+	-- Bracket Pairing
 	{
 		"windwp/nvim-autopairs",
 		event = "InsertEnter",
 		opts = {}, -- this is equalent to setup({}) function
 	},
-	"nvim-lua/plenary.nvim",
+	-- Dashboard opener
 	{
 		"goolord/alpha-nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },

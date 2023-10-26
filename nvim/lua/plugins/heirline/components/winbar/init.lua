@@ -72,7 +72,9 @@ local FileNameModifer = {
 	hl = function()
 		if vim.bo.modified then
 			-- use `force` because we need to override the child's hl foreground
-			return { fg = "cyan", bold = true, force = true }
+			return { fg = "lotusYellow3", bold = true, force = true }
+		else
+			return { fg = "lotusWhite4", bold = true, force = true }
 		end
 	end,
 }
@@ -99,7 +101,7 @@ local TerminalName = {
 		local tname, _ = vim.api.nvim_buf_get_name(0):gsub(".*:", "")
 		return " " .. tname
 	end,
-	hl = { fg = "blue", bold = true },
+	hl = { bold = true },
 }
 
 local CloseButton = {

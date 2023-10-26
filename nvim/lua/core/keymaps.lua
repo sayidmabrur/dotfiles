@@ -61,3 +61,11 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Nvim Tree
 keymap("n", "<leader>e", ":Neotree toggle<cr>", opts)
+
+-- Buffer Manage
+keymap("n", "<A-k>", ":bnext <cr>", opts)
+keymap("n", "<A-j>", ":bprev <cr>", opts)
+
+keymap("n", "<A-w>", ":bdel <cr>", opts)
+
+keymap("n", "<A-t>", ":tabnew <cr>", opts)
