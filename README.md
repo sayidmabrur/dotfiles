@@ -24,8 +24,9 @@ pacman -S neovim
 
 Neovim is a Vim-based text editor engineered for extensibility and usability, to encourage new applications and contributions. <a href="https://neovim.io/charter/">read more here.</a>
 
-This is my Neovim manual config.
+This is my Neovim manual config, all codes are written in lua language.
 - colorcsheme : TokyoNight Moon.
+- alpha.nvim for better UI when nvim first opened.
 - Lazy.nvim for plugin manager for better performance.
 - Mason.nvim for easier managing lsp, formatter, linters etc.
 - heirline.nvim for customize statusline, winbar, tabline etc.
