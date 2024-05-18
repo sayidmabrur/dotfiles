@@ -7,7 +7,7 @@
 pacman -S kitty
 ```
 
-Kitty is customizeable terminal for Linux. It's easier to customiize with kitty.
+Kitty is customizeable terminal for Linux. It's easier to customize terminal with kitty.
 
 This is my kitty configuration. Nothing is really configured. Only the font size and style so it's matched with my display.
 
@@ -24,7 +24,7 @@ pacman -S neovim
 
 Neovim is a Vim-based text editor engineered for extensibility and usability, to encourage new applications and contributions. <a href="https://neovim.io/charter/">read more here.</a>
 
-This is my Neovim manual config, all codes are written in lua language.
+This is my Neovim manual config, all codes are written in lua.
 - colorcsheme : TokyoNight Moon.
 - alpha.nvim for better UI when nvim first opened.
 - Lazy.nvim for plugin manager for better performance.
