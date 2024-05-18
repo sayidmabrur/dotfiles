@@ -3,6 +3,7 @@ local conditions = require("heirline.conditions")
 local statusline = require("plugins.heirline.components.statusline")
 local winbar = require("plugins.heirline.components.winbar")
 local tabline = require("plugins.heirline.components.tabline")
+local colors = require("kanagawa.colors")
 
 require("heirline").setup({
 	statusline = statusline,
@@ -11,6 +12,7 @@ require("heirline").setup({
 	opts = {
 		-- if the callback returns true, the winbar will be disabled for that window
 		-- the args parameter corresponds to the table argument passed to autocommand callbacks. :h nvim_lua_create_autocmd()
+		colors = colors,
 		disable_winbar_cb = function(args)
 			return conditions.buffer_matches({
 				buftype = { "nofile", "prompt", "help", "quickfix" },

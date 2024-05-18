@@ -8,7 +8,7 @@ null_ls.setup({
 		formatting.stylua,
 		formatting.black,
 		diagnostics.pylama,
-		formatting.phpcsfixer,
+		-- formatting.phpcsfixer,
 	},
 	-- Format file on save
 	on_attach = on_attach,

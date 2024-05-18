@@ -329,11 +329,11 @@ local LSPActive = {
 		for _, server in pairs(vim.lsp.get_active_clients({ bufnr = 0 })) do
 			table.insert(names, server.name)
 		end
-		return "  " .. table.concat(names, "|") .. ""
+		return "   " .. table.concat(names, ",") .. ""
 	end,
 	hl = { bold = true },
 }
-local Divider = { provider = "" }
+local Divider = { provider = "" }
 
 return {
 	block,
@@ -345,11 +345,12 @@ return {
 	Align,
 	Diagnostics,
 	Space,
+	Git,
+	Space,
 	LSPActive,
 	Space,
-	Divider,
+	-- Divider,
 	Space,
-	Git,
 	Space,
 	Divider,
 	Space,

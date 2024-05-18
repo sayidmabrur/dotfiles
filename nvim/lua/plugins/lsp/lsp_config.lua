@@ -35,7 +35,7 @@ local lsps = {
     name = "spectral",
     opts = {},
   },
-  -- JSON & YAML Language Server
+  -- HTML Language Server
   {
     name = "html",
     opts = {},
