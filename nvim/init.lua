@@ -6,6 +6,15 @@ require("core")
 local plugins = {
 
 	{
+		"folke/trouble.nvim",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		opts = {
+			-- your configuration comes here
+			-- or leave it empty to use the default settings
+			-- refer to the configuration section below
+		},
+	},
+	{
 		"j-hui/fidget.nvim",
 		tag = "legacy",
 		event = "LspAttach",
@@ -114,9 +123,9 @@ local opts = {
 		border = "rounded",
 		title = "Made 󰄛 With 󱚦 Love 󰞇 ", ---@type string only works when border is not "none"
 	},
-	install = {
-		colorscheme = { "gruvbox-material" },
-	},
+	-- install = {
+	-- 	colorscheme = { "gruvbox-material" },
+	-- },
 }
 
 require("lazy").setup(plugins, opts)

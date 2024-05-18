@@ -1,8 +1,8 @@
 local conditions = require("heirline.conditions")
 -- defining lines
-local statusline = require("plugins.heirline.components.statusline")
-local winbar = require("plugins.heirline.components.winbar")
-local tabline = require("plugins.heirline.components.tabline")
+local statusline = require("plugins.heirline.layouts.statusline")
+local winbar = require("plugins.heirline.layouts.winbar")
+local tabline = require("plugins.heirline.layouts.tabline")
 local colors = require("kanagawa.colors")
 
 require("heirline").setup({
