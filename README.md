@@ -7,7 +7,7 @@
 pacman -S kitty
 ```
 
-Kitty is customizeable terminal for Linux. It's easier to customize terminal with kitty.
+Kitty is customizeable terminal for Linux. It's easier to customize terminal kitty.
 
 This is my kitty configuration. Nothing is really configured. Only the font size and style so it's matched with my display.
 
